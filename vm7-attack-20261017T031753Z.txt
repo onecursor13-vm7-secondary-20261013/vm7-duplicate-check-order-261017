@@ -1,0 +1,1 @@
+Controlled attack marker for Mergify auto-merge-condition revocation test.
