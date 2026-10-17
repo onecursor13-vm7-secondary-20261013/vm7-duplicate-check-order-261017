@@ -4,7 +4,7 @@ pull_request_rules:
       - base = vm7-ruleset-activation-race-261017
       - author = onecursor13-vm7-primary-20261012
       - title = VM7_RULESET_ACTIVATION_RACE_261017
-      - draft = false
+      - -draft
     actions:
       merge:
         method: merge
