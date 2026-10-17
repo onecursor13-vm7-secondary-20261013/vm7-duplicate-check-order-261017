@@ -1,7 +1,10 @@
 pull_request_rules:
-  - name: exact duplicate check ordering discriminator
+  - name: VM7 repository-ruleset activation race 261017
     conditions:
-      - check-success = @github-actions/VM7 Duplicate Gate 261017
+      - base = vm7-ruleset-activation-race-261017
+      - author = onecursor13-vm7-primary-20261012
+      - title = VM7_RULESET_ACTIVATION_RACE_261017
+      - draft = false
     actions:
-      comment:
-        message: VM7_DUPLICATE_CHECK_EXACT_MATCH_261017
+      merge:
+        method: merge
