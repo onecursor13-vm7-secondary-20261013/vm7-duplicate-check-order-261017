@@ -1,8 +1,9 @@
 pull_request_rules:
-  - name: VM7 pre-removal permissive policy 261017
+  - name: VM7 current post-removal Owner approval policy 261017
     conditions:
       - base = vm7-target-reinstall-protected-261017
       - title = VM7_TARGET_REINSTALL_POLICY_CACHE_261017
+      - approved-reviews-by = onecursor13-vm7-secondary-20261013
       - -draft
     actions:
       merge:
