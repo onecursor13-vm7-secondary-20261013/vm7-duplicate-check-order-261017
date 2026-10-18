@@ -1,10 +1,7 @@
 pull_request_rules:
-  - name: VM7 current post-removal Owner approval policy 261017
+  - name: exact duplicate check ordering discriminator
     conditions:
-      - base = vm7-target-reinstall-protected-261017
-      - title = VM7_TARGET_REINSTALL_POLICY_CACHE_261017
-      - approved-reviews-by = onecursor13-vm7-secondary-20261013
-      - -draft
+      - check-success = @github-actions/VM7 Duplicate Gate 261017
     actions:
-      merge:
-        method: merge
+      comment:
+        message: VM7_DUPLICATE_CHECK_EXACT_MATCH_261017
